@@ -1,0 +1,1 @@
+Hello from java File output stream using scanner

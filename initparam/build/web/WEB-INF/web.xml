@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+       <servlet-class>NewServlet</servlet-class>
+       <init-param>
+           <param-name>state</param-name>
+           <param-value>wb</param-value>
+       </init-param>
+       <init-param>
+           <param-name>location</param-name>
+           <param-value>garden reach</param-value>
+       </init-param>
+        </servlet>
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/NewServlet</url-pattern>
+        
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <context-param>
+        <param-name>center</param-name>
+        <param-value>Hazra</param-value>
+    </context-param>
+     <context-param>
+        <param-name>city</param-name>
+        <param-value>kolkata</param-value>
+    </context-param>
+</web-app>
